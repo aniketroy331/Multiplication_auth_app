@@ -1,0 +1,126 @@
+  .quiz-container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border: 3px solid #ff9966;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ff6600;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .question {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fffacd;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .options {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .option {
+    display: block;
+    margin: 8px 0;
+    padding: 15px;
+    background-color: #e6f7ff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #99ccff;
+  }
+  
+  .option:hover {
+    background-color: #cce6ff;
+    transform: scale(1.03);
+  }
+  
+  .option.selected {
+    background-color: #99ff99;
+    color: #006600;
+    border: 2px solid #009900;
+    font-weight: bold;
+  }
+  
+  .option.correct {
+    background-color: #99ff99;
+    color: #006600;
+    border: 2px solid #009900;
+    font-weight: bold;
+  }
+  
+  .option.incorrect {
+    background-color: #ff9999;
+    color: #990000;
+    border: 2px solid #ff0000;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background-color: #ff9966;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #ff7733;
+    transform: scale(1.05);
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .result {
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fffacd;
+    border: 3px dashed #ff9966;
+  }
+  
+  .progress {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ff6600;
+  }
+  
+  .explanation {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #fff0f5;
+    border-left: 5px solid #ff99cc;
+    font-size: 18px;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  .celebration {
+    font-size: 24px;
+    color: #ff6600;
+    text-align: center;
+    margin-top: 10px;
+  }
